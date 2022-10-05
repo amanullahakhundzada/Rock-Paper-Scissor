@@ -30,15 +30,15 @@ function generateComputerChoice() {
 }
 function getResult() {
   if (computerChoice == userChoice) {
-    result = " It's a Tie 🦹=🤖 Try Again 😟";
+    result = " It's a Tie Try Again ";
   } else if (
     (computerChoice == "Rock" && userChoice == "Paper") ||
     (computerChoice == "Paper" && userChoice == "Scissor") ||
     (computerChoice === "Scissor" && userChoice == "Rock")
   ) {
-    result = `YOU 🦹 Won 😃 BOT 🤖 Lost 😢`;
+    result = `🦹YOU  Won   `;
   } else {
-    result = `BOT 🤖 Won 😃 YOU🦹 Lost 😢  `;
+    result = `🤖BOT  Won   `;
   }
   resultDisplay.innerHTML = result;
 }
